@@ -1,63 +1,122 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Student prototype website for the College of Computer Science, King Khalid University.">
-<title>KKU Computer Science Discovery Hub</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="College of Computer Science, Department of Computer Science, King Khalid University.">
+  <title>Department of Computer Science | King Khalid University</title>
+  <link rel="icon" href="kku-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
- <div class="container nav-wrap">
-  <a class="brand" href="index.html"><img src="kku-logo.png" alt="King Khalid University logo"><span class="brand-text"><strong>Computer Science Discovery Hub</strong><span>College of Computer Science · Student Prototype</span></span></a>
-  <nav aria-label="Main navigation"><ul class="menu">
-   <li><a data-nav href="index.html">Home</a></li><li><a data-nav href="about.html">About Us</a></li><li><a data-nav href="contact.html">Contact</a></li><li><a data-nav class="feedback-link" href="feedback.html">Feedback</a></li>
-  </ul></nav>
- </div>
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="King Khalid University - Department of Computer Science home">
+      <img src="kku-logo.png" alt="King Khalid University logo">
+      <span class="brand-copy">
+        <strong>King Khalid University</strong>
+        <span>College of Computer Science</span>
+        <small>Department of Computer Science</small>
+      </span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu">
+      <span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Menu</span>
+    </button>
+  </div>
 </header>
+<div class="menu-overlay" data-menu-overlay hidden></div>
+<nav class="menu-panel" id="site-menu" aria-label="Main navigation" aria-hidden="true">
+  <div class="menu-panel-head">
+    <span>Navigation</span>
+    <button class="menu-close" type="button" aria-label="Close menu">×</button>
+  </div>
+  <ul class="menu-list">
+    <li><a data-nav href="index.html"><span>01</span>Home</a></li>
+    <li><a data-nav href="about.html"><span>02</span>About Us</a></li>
+    <li><a data-nav href="contact.html"><span>03</span>Contact</a></li>
+    <li><a data-nav href="feedback.html"><span>04</span>Feedback</a></li>
+  </ul>
+  <div class="menu-panel-foot">College of Computer Science</div>
+</nav>
 <main id="main">
-<section class="hero">
- <div class="container hero-grid">
-  <div>
-   <span class="eyebrow">King Khalid University · Computer Science</span>
-   <h1>Build ideas.<br><span>Shape digital futures.</span></h1>
-   <p class="lead">A focused student-facing prototype that turns the college website into a clear starting point for learning pathways, academic support and contact information.</p>
-   <div class="cta-row"><a class="btn btn-primary" href="about.html">Explore the college</a><a class="btn btn-secondary" href="contact.html">Ask a question</a></div>
-  </div>
-  <aside class="hero-panel" aria-label="Quick academic overview">
-   <div class="mini-title">At a glance</div><p style="margin-top:.2rem;color:#62706d">A compact information architecture designed for fast scanning on desktop and mobile.</p>
-   <div class="quick-grid">
-    <div class="quick-card"><strong>3</strong><span>core navigation pages</span></div>
-    <div class="quick-card"><strong>1</strong><span>feedback pathway</span></div>
-    <div class="quick-card"><strong>AA</strong><span>accessibility-minded UI</span></div>
-    <div class="quick-card"><strong>100%</strong><span>responsive layout</span></div>
-   </div>
-  </aside>
- </div>
-</section>
-<section class="section white">
- <div class="container">
-  <div class="section-head"><div><span class="eyebrow">What students need first</span><h2>Designed around useful decisions</h2></div><p>The content avoids a crowded portal layout. Each block answers a specific student question and provides a clear next action.</p></div>
-  <div class="cards">
-   <article class="card"><div class="card-icon">01</div><h3>Academic direction</h3><p>Understand the department’s computing focus and how knowledge moves from foundations to applied problem solving.</p></article>
-   <article class="card"><div class="card-icon">02</div><h3>Learning environment</h3><p>See how laboratories, projects, teamwork and disciplined engineering practices support practical learning.</p></article>
-   <article class="card"><div class="card-icon">03</div><h3>Direct contact</h3><p>Use a simple contact route with client-side validation and clear expectations about how a production service should handle data.</p></article>
-  </div>
- </div>
-</section>
-<section class="section">
- <div class="container">
-  <div class="section-head"><div><span class="eyebrow">Quick routes</span><h2>Four clicks, four intentions</h2></div><p>A small number of routes reduces navigation decisions and supports predictable movement through the prototype.</p></div>
-  <div class="route-strip">
-   <div class="route"><span>Discover</span><strong>College overview</strong></div>
-   <div class="route"><span>Understand</span><strong>Learning journey</strong></div>
-   <div class="route"><span>Connect</span><strong>Contact pathway</strong></div>
-   <div class="route"><span>Improve</span><strong>User feedback</strong></div>
-  </div>
- </div>
-</section>
+  <section class="hero formal-hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">College of Computer Science</p>
+        <h1>Department of<br><span>Computer Science</span></h1>
+        <p class="lead">A clear academic gateway to the department, its programs, study pathways and contact information at King Khalid University.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="about.html">About the Department</a>
+          <a class="btn btn-outline" href="contact.html">Contact Information</a>
+        </div>
+      </div>
+      <aside class="fact-card" aria-label="Department quick facts">
+        <p class="fact-label">Department at a glance</p>
+        <div class="fact-row"><strong>2000/2001</strong><span>Department established</span></div>
+        <div class="fact-row"><strong>4 Years</strong><span>Bachelor program duration</span></div>
+        <div class="fact-row"><strong>138</strong><span>Bachelor program credits</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="container">
+      <div class="section-title-row">
+        <div><p class="kicker">Academic programs</p><h2>Study and advance in computer science</h2></div>
+        <p>The department offers undergraduate and postgraduate opportunities that support academic development and professional preparation.</p>
+      </div>
+      <div class="program-grid">
+        <article class="program-card featured">
+          <span class="program-level">Undergraduate</span>
+          <h3>Bachelor in Computer Science</h3>
+          <p>A four-year program that develops core knowledge and practical skills across major areas of computer science.</p>
+        </article>
+        <article class="program-card">
+          <span class="program-level">Postgraduate</span>
+          <h3>MSc Computer Science</h3>
+          <p>Advanced study and research pathways for graduates seeking deeper specialization in computer science.</p>
+        </article>
+        <article class="program-card">
+          <span class="program-level">Postgraduate</span>
+          <h3>MSc in Artificial Intelligence</h3>
+          <p>Graduate-level study focused on contemporary artificial intelligence knowledge and applications.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container split-info">
+      <div>
+        <p class="kicker">Academic pathways</p>
+        <h2>Focused learning areas</h2>
+        <p class="body-copy">The Bachelor in Computer Science includes structured study across core computing knowledge with three stated tracks.</p>
+      </div>
+      <div class="path-list">
+        <div><span>01</span><strong>Intelligent Systems</strong></div>
+        <div><span>02</span><strong>Software Engineering</strong></div>
+        <div><span>03</span><strong>Network Security</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="container call-to-action">
+      <div><p class="kicker">Department information</p><h2>Find the information you need quickly</h2><p>Use the menu to move directly between the department overview, contact details and website feedback.</p></div>
+      <button class="btn btn-primary" type="button" data-open-menu>Open Main Menu</button>
+    </div>
+  </section>
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div><strong>King Khalid University</strong><br>College of Computer Science · Department of Computer Science</div><div><strong>Web Engineering 3342 CCS</strong><br>Assignment prototype by Ghala Al-Qhtani</div></div><div class="container footer-note">Academic prototype only. Content and interface are created for coursework and are not presented as the university’s official website.</div></footer>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><img src="kku-logo.png" alt="" class="footer-logo"><div><strong>King Khalid University</strong><span>College of Computer Science<br>Department of Computer Science</span></div></div>
+    <div class="footer-address"><strong>Location</strong><span>Saudi Arabia · Asir · Abha<br>P.O. Box 960 · Postal Code 61421</span></div>
+  </div>
+  <div class="container footer-bottom"><span>Web Engineering coursework website</span><span>Section 1302</span></div>
+</footer>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>

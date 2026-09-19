@@ -1,7 +1,57 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Usability feedback form for the KKU Computer Science student prototype."><title>Feedback | KKU Computer Science Discovery Hub</title><link rel="stylesheet" href="styles.css"></head>
-<body><a class="skip-link" href="#main">Skip to main content</a>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="kku-logo.png" alt="King Khalid University logo"><span class="brand-text"><strong>Computer Science Discovery Hub</strong><span>College of Computer Science · Student Prototype</span></span></a><nav aria-label="Main navigation"><ul class="menu"><li><a data-nav href="index.html">Home</a></li><li><a data-nav href="about.html">About Us</a></li><li><a data-nav href="contact.html">Contact</a></li><li><a data-nav class="feedback-link" href="feedback.html">Feedback</a></li></ul></nav></div></header>
-<main id="main"><section class="page-hero"><div class="container"><span class="eyebrow">Usability feedback</span><h1>Help improve the next increment.</h1><p class="lead">Rate the prototype after visiting Home, About Us and Contact. The questions focus on usability, navigation, content clarity, visual design and confidence.</p></div></section>
-<section class="section white"><div class="container two-col"><div><span class="eyebrow">How to test</span><h2>Three short tasks</h2><div class="timeline"><div class="timeline-item"><div class="timeline-dot">1</div><div><h3>Find the college overview</h3><p>Use the menu to reach About Us and identify the learning journey.</p></div></div><div class="timeline-item"><div class="timeline-dot">2</div><div><h3>Locate a contact route</h3><p>Open Contact and identify the fields needed for an inquiry.</p></div></div><div class="timeline-item"><div class="timeline-dot">3</div><div><h3>Return here</h3><p>Complete the ratings and suggest one improvement for the next version.</p></div></div></div></div><form class="form-card" id="feedbackForm" novalidate><label for="tester">Tester code</label><input id="tester" name="tester" required maxlength="12" placeholder="Example: U01"><div class="rating-grid"><label for="usability">Ease of use</label><select id="usability" name="usability" required><option value="">Rate</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select><label for="navigation">Navigation clarity</label><select id="navigation" name="navigation" required><option value="">Rate</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select><label for="content">Content clarity</label><select id="content" name="content" required><option value="">Rate</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select><label for="visual">Visual design</label><select id="visual" name="visual" required><option value="">Rate</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select><label for="confidence">Confidence using forms</label><select id="confidence" name="confidence" required><option value="">Rate</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div><label for="improvement">One improvement you would suggest</label><textarea id="improvement" name="improvement" required maxlength="350"></textarea><button class="btn btn-primary" type="submit">Save demo feedback</button><p class="notice">For this prototype, responses are stored only in the current browser using local storage. A production system would use a secure authenticated endpoint and a documented retention policy.</p><div id="feedbackStatus" class="form-status" role="status" aria-live="polite"></div></form></div></section></main>
-<footer class="site-footer"><div class="container footer-grid"><div><strong>King Khalid University</strong><br>College of Computer Science · Department of Computer Science</div><div><strong>Web Engineering 3342 CCS</strong><br>Assignment prototype by Ghala Al-Qhtani</div></div><div class="container footer-note">Academic prototype only. Content and interface are created for coursework and are not presented as the university’s official website.</div></footer><script src="script.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Website usability feedback for the Department of Computer Science coursework website.">
+  <title>Feedback | Department of Computer Science</title>
+  <link rel="icon" href="kku-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-row"><a class="brand" href="index.html" aria-label="King Khalid University - Department of Computer Science home"><img src="kku-logo.png" alt="King Khalid University logo"><span class="brand-copy"><strong>King Khalid University</strong><span>College of Computer Science</span><small>Department of Computer Science</small></span></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>Menu</span></button></div>
+</header>
+<div class="menu-overlay" data-menu-overlay hidden></div>
+<nav class="menu-panel" id="site-menu" aria-label="Main navigation" aria-hidden="true"><div class="menu-panel-head"><span>Navigation</span><button class="menu-close" type="button" aria-label="Close menu">×</button></div><ul class="menu-list"><li><a data-nav href="index.html"><span>01</span>Home</a></li><li><a data-nav href="about.html"><span>02</span>About Us</a></li><li><a data-nav href="contact.html"><span>03</span>Contact</a></li><li><a data-nav href="feedback.html"><span>04</span>Feedback</a></li></ul><div class="menu-panel-foot">College of Computer Science</div></nav>
+<main id="main">
+  <section class="page-hero"><div class="container narrow"><p class="kicker">Website feedback</p><h1>Help us evaluate the website</h1><p class="lead">Complete three short tasks, then rate your experience. Use only a participant code such as U01; do not enter your name or student ID.</p></div></section>
+  <section class="section white">
+    <div class="container feedback-layout">
+      <aside class="test-tasks">
+        <p class="kicker">Test tasks</p>
+        <h2>Before you rate</h2>
+        <ol>
+          <li><strong>Open About Us</strong><span>Find the department overview and one study pathway.</span></li>
+          <li><strong>Open Contact</strong><span>Find the department email and postal address.</span></li>
+          <li><strong>Return to Feedback</strong><span>Use the Menu button to return here and submit your ratings.</span></li>
+        </ol>
+      </aside>
+      <form class="feedback-form" id="feedbackForm" novalidate>
+        <div class="field"><label for="tester">Participant code</label><input id="tester" name="tester" required maxlength="8" pattern="[A-Za-z0-9-]{2,8}" placeholder="U01" autocomplete="off"></div>
+        <div class="rating-table" role="group" aria-label="Website ratings">
+          <div class="rating-row"><label for="usability">Ease of use</label><select id="usability" name="usability" required><option value="">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+          <div class="rating-row"><label for="navigation">Navigation clarity</label><select id="navigation" name="navigation" required><option value="">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+          <div class="rating-row"><label for="content">Content clarity</label><select id="content" name="content" required><option value="">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+          <div class="rating-row"><label for="visual">Visual design</label><select id="visual" name="visual" required><option value="">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+          <div class="rating-row"><label for="mobile">Mobile / device usability</label><select id="mobile" name="mobile" required><option value="">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+        </div>
+        <div class="field"><label for="liked">What worked well?</label><textarea id="liked" name="liked" required maxlength="240" placeholder="Write one short point..."></textarea></div>
+        <div class="field"><label for="improvement">What should be improved?</label><textarea id="improvement" name="improvement" required maxlength="240" placeholder="Write one short suggestion..."></textarea></div>
+        <button class="btn btn-primary full-width" type="submit">Submit Feedback</button>
+        <p class="privacy-note">Please do not include names, academic numbers, passwords or other sensitive personal information.</p>
+        <div id="feedbackStatus" class="feedback-status" role="status" aria-live="polite" hidden>
+          <strong>Thank you. Your feedback is ready to share.</strong>
+          <p id="feedbackSummary"></p>
+          <div class="share-actions"><button class="btn btn-outline" id="copyFeedback" type="button">Copy Response</button><button class="btn btn-primary" id="shareFeedback" type="button">Share Response</button></div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><img src="kku-logo.png" alt="" class="footer-logo"><div><strong>King Khalid University</strong><span>College of Computer Science<br>Department of Computer Science</span></div></div><div class="footer-address"><strong>Location</strong><span>Saudi Arabia · Asir · Abha<br>P.O. Box 960 · Postal Code 61421</span></div></div><div class="container footer-bottom"><span>Web Engineering coursework website</span><span>Section 1302</span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

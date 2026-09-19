@@ -1,7 +1,52 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Contact page prototype for the College of Computer Science."><title>Contact | KKU Computer Science Discovery Hub</title><link rel="stylesheet" href="styles.css"></head>
-<body><a class="skip-link" href="#main">Skip to main content</a>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="kku-logo.png" alt="King Khalid University logo"><span class="brand-text"><strong>Computer Science Discovery Hub</strong><span>College of Computer Science · Student Prototype</span></span></a><nav aria-label="Main navigation"><ul class="menu"><li><a data-nav href="index.html">Home</a></li><li><a data-nav href="about.html">About Us</a></li><li><a data-nav href="contact.html">Contact</a></li><li><a data-nav class="feedback-link" href="feedback.html">Feedback</a></li></ul></nav></div></header>
-<main id="main"><section class="page-hero"><div class="container"><span class="eyebrow">Contact pathway</span><h1>One form. Clear purpose. Minimal data.</h1><p class="lead">The contact design collects only the information needed to route a question in a demonstration environment.</p></div></section>
-<section class="section white"><div class="container two-col"><div><span class="eyebrow">Before you send</span><h2>Choose the topic that best fits your question.</h2><p>The form uses required fields, native browser validation and a clear status message. It deliberately avoids asking for passwords, national IDs, payment information or other sensitive data.</p><div class="cards" style="grid-template-columns:1fr;margin-top:1rem"><article class="card"><h3>Academic inquiry</h3><p>Questions about learning pathways, coursework or general department information.</p></article><article class="card"><h3>Technical inquiry</h3><p>Questions about this student prototype, navigation or accessibility behavior.</p></article></div></div><form class="form-card" id="contactForm" novalidate><div class="form-grid"><div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required maxlength="80"></div><div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120"></div><div class="full"><label for="topic">Topic</label><select id="topic" name="topic" required><option value="">Select a topic</option><option>Academic information</option><option>Student support</option><option>Website feedback</option><option>Other</option></select></div><div class="full"><label for="message">Message</label><textarea id="message" name="message" required minlength="10" maxlength="600" placeholder="Write a concise question..."></textarea></div><div class="full"><button class="btn btn-primary" type="submit">Validate message</button><p class="notice">Prototype behavior: the form validates input locally and does not send it to a server.</p><div id="contactStatus" class="form-status" role="status" aria-live="polite"></div></div></div></form></div></section></main>
-<footer class="site-footer"><div class="container footer-grid"><div><strong>King Khalid University</strong><br>College of Computer Science · Department of Computer Science</div><div><strong>Web Engineering 3342 CCS</strong><br>Assignment prototype by Ghala Al-Qhtani</div></div><div class="container footer-note">Academic prototype only. Content and interface are created for coursework and are not presented as the university’s official website.</div></footer><script src="script.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Contact information for the Department of Computer Science, King Khalid University.">
+  <title>Contact | Department of Computer Science</title>
+  <link rel="icon" href="kku-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="King Khalid University - Department of Computer Science home"><img src="kku-logo.png" alt="King Khalid University logo"><span class="brand-copy"><strong>King Khalid University</strong><span>College of Computer Science</span><small>Department of Computer Science</small></span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>Menu</span></button>
+  </div>
+</header>
+<div class="menu-overlay" data-menu-overlay hidden></div>
+<nav class="menu-panel" id="site-menu" aria-label="Main navigation" aria-hidden="true"><div class="menu-panel-head"><span>Navigation</span><button class="menu-close" type="button" aria-label="Close menu">×</button></div><ul class="menu-list"><li><a data-nav href="index.html"><span>01</span>Home</a></li><li><a data-nav href="about.html"><span>02</span>About Us</a></li><li><a data-nav href="contact.html"><span>03</span>Contact</a></li><li><a data-nav href="feedback.html"><span>04</span>Feedback</a></li></ul><div class="menu-panel-foot">College of Computer Science</div></nav>
+<main id="main">
+  <section class="page-hero">
+    <div class="container narrow"><p class="kicker">Contact</p><h1>Contact the Department</h1><p class="lead">Official location and department contact information in one clear place.</p></div>
+  </section>
+  <section class="section white">
+    <div class="container contact-grid">
+      <article class="contact-card primary-contact">
+        <p class="kicker">Department contact</p>
+        <h2>Computer Science</h2>
+        <div class="contact-detail"><span>Email</span><a href="mailto:alasmary@kku.edu.sa">alasmary@kku.edu.sa</a></div>
+        <div class="contact-detail"><span>University</span><strong>King Khalid University</strong></div>
+        <a class="btn btn-primary" href="mailto:alasmary@kku.edu.sa?subject=Department%20of%20Computer%20Science%20Inquiry">Send an Email</a>
+      </article>
+      <article class="contact-card">
+        <p class="kicker">Postal address</p>
+        <h2>College of Computer Science</h2>
+        <address>King Khalid University<br>Saudi Arabia<br>Asir · Abha<br>P.O. Box 960<br>Postal Code 61421</address>
+      </article>
+    </div>
+  </section>
+  <section class="section soft">
+    <div class="container contact-note">
+      <div><p class="kicker">Before contacting</p><h2>Use the appropriate channel</h2></div>
+      <p>For academic and department inquiries, use the department email above. Do not include passwords, payment details or other sensitive personal information in an email message.</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><img src="kku-logo.png" alt="" class="footer-logo"><div><strong>King Khalid University</strong><span>College of Computer Science<br>Department of Computer Science</span></div></div><div class="footer-address"><strong>Location</strong><span>Saudi Arabia · Asir · Abha<br>P.O. Box 960 · Postal Code 61421</span></div></div><div class="container footer-bottom"><span>Web Engineering coursework website</span><span>Section 1302</span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
