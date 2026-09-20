@@ -4,34 +4,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="Website feedback for the Department of Computer Science website.">
+  <meta name="description" content="Website usability feedback for the Department of Computer Science coursework website.">
   <title>Feedback | Department of Computer Science</title>
   <link rel="icon" href="kku-logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main" data-i18n="skip">Skip to main content</a>
-<header class="site-header"><div class="container header-row"><a class="brand" href="index.html"><img src="kku-logo.png" alt="King Khalid University logo"><span class="brand-copy"><strong data-i18n="university">King Khalid University</strong><span data-i18n="college">College of Computer Science</span><small data-i18n="department">Department of Computer Science</small></span></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span data-i18n="menu">Menu</span></button></div></header>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-row"><a class="brand" href="index.html" aria-label="King Khalid University - Department of Computer Science home"><img src="kku-logo.png" alt="King Khalid University logo"><span class="brand-copy"><strong>King Khalid University</strong><span>College of Computer Science</span><small>Department of Computer Science</small></span></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>Menu</span></button></div>
+</header>
 <div class="menu-overlay" data-menu-overlay hidden></div>
-<nav class="menu-panel" id="site-menu" aria-label="Main navigation" aria-hidden="true"><div class="menu-panel-head"><span data-i18n="navigation">Navigation</span><button class="menu-close" type="button" aria-label="Close menu">×</button></div><ul class="menu-list"><li><a data-nav href="index.html"><span class="nav-no">01</span><span data-i18n="home">Home</span></a></li><li><a data-nav href="about.html"><span class="nav-no">02</span><span data-i18n="about">About Us</span></a></li><li><a data-nav href="contact.html"><span class="nav-no">03</span><span data-i18n="contact">Contact</span></a></li><li><a data-nav href="feedback.html"><span class="nav-no">04</span><span data-i18n="feedback">Feedback</span></a></li></ul><div class="menu-panel-foot"><span data-i18n="college">College of Computer Science</span><button class="language-toggle" type="button" data-language-toggle>العربية</button></div></nav>
+<nav class="menu-panel" id="site-menu" aria-label="Main navigation" aria-hidden="true"><div class="menu-panel-head"><span>Navigation</span><button class="menu-close" type="button" aria-label="Close menu">×</button></div><ul class="menu-list"><li><a data-nav href="index.html"><span>01</span>Home</a></li><li><a data-nav href="about.html"><span>02</span>About Us</a></li><li><a data-nav href="contact.html"><span>03</span>Contact</a></li><li><a data-nav href="feedback.html"><span>04</span>Feedback</a></li></ul><div class="menu-panel-foot">College of Computer Science</div></nav>
 <main id="main">
-  <section class="page-hero"><div class="container narrow"><p class="kicker" data-i18n="feedbackKicker">Website feedback</p><h1 data-i18n="feedbackTitle">Share your feedback</h1><p class="lead" data-i18n="feedbackLead">This form evaluates content clarity, navigation, visual design and usability across devices.</p></div></section>
-  <section class="section white"><div class="container"><div class="feedback-intro"><p class="kicker" data-i18n="feedbackIntroTitle">Short evaluation</p><p data-i18n="feedbackIntroText">Rate each item from 1 to 5, then add a short comment if you wish.</p></div><form class="feedback-form" id="feedbackForm" novalidate>
-    <div class="field"><label for="tester" data-i18n="participantCode">Participant code</label><input id="tester" name="tester" required maxlength="8" pattern="[A-Za-z0-9-]{2,8}" placeholder="U01" autocomplete="off"></div>
-    <div class="rating-table" role="group" aria-label="Website ratings">
-      <div class="rating-row"><label for="usability" data-i18n="ease">Ease of use</label><select id="usability" name="usability" required><option value="" data-i18n="rate">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
-      <div class="rating-row"><label for="navigation" data-i18n="navigationClarity">Navigation clarity</label><select id="navigation" name="navigation" required><option value="" data-i18n="rate">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
-      <div class="rating-row"><label for="content" data-i18n="contentClarity">Content clarity</label><select id="content" name="content" required><option value="" data-i18n="rate">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
-      <div class="rating-row"><label for="visual" data-i18n="visualDesign">Visual design</label><select id="visual" name="visual" required><option value="" data-i18n="rate">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
-      <div class="rating-row"><label for="mobile" data-i18n="mobileUsability">Mobile / device usability</label><select id="mobile" name="mobile" required><option value="" data-i18n="rate">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+  <section class="page-hero"><div class="container narrow"><p class="kicker">Website feedback</p><h1>Help us evaluate the website</h1><p class="lead">Complete three short tasks, then rate your experience. Use only a participant code such as U01; do not enter your name or student ID.</p></div></section>
+  <section class="section white">
+    <div class="container feedback-layout">
+      <aside class="test-tasks">
+        <p class="kicker">Test tasks</p>
+        <h2>Before you rate</h2>
+        <ol>
+          <li><strong>Open About Us</strong><span>Find the department overview and one study pathway.</span></li>
+          <li><strong>Open Contact</strong><span>Find the department email and postal address.</span></li>
+          <li><strong>Return to Feedback</strong><span>Use the Menu button to return here and submit your ratings.</span></li>
+        </ol>
+      </aside>
+      <form class="feedback-form" id="feedbackForm" novalidate>
+        <div class="field"><label for="tester">Participant code</label><input id="tester" name="tester" required maxlength="8" pattern="[A-Za-z0-9-]{2,8}" placeholder="U01" autocomplete="off"></div>
+        <div class="rating-table" role="group" aria-label="Website ratings">
+          <div class="rating-row"><label for="usability">Ease of use</label><select id="usability" name="usability" required><option value="">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+          <div class="rating-row"><label for="navigation">Navigation clarity</label><select id="navigation" name="navigation" required><option value="">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+          <div class="rating-row"><label for="content">Content clarity</label><select id="content" name="content" required><option value="">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+          <div class="rating-row"><label for="visual">Visual design</label><select id="visual" name="visual" required><option value="">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+          <div class="rating-row"><label for="mobile">Mobile / device usability</label><select id="mobile" name="mobile" required><option value="">Rate 1–5</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+        </div>
+        <div class="field"><label for="liked">What worked well?</label><textarea id="liked" name="liked" required maxlength="240" placeholder="Write one short point..."></textarea></div>
+        <div class="field"><label for="improvement">What should be improved?</label><textarea id="improvement" name="improvement" required maxlength="240" placeholder="Write one short suggestion..."></textarea></div>
+        <button class="btn btn-primary full-width" type="submit">Submit Feedback</button>
+        <p class="privacy-note">Please do not include names, academic numbers, passwords or other sensitive personal information.</p>
+        <div id="feedbackStatus" class="feedback-status" role="status" aria-live="polite" hidden>
+          <strong>Thank you. Your feedback is ready to share.</strong>
+          <p id="feedbackSummary"></p>
+          <div class="share-actions"><button class="btn btn-outline" id="copyFeedback" type="button">Copy Response</button><button class="btn btn-primary" id="shareFeedback" type="button">Share Response</button></div>
+        </div>
+      </form>
     </div>
-    <div class="field"><label for="liked" data-i18n="workedWell">What worked well?</label><textarea id="liked" name="liked" required maxlength="240" placeholder="Write one short point..." data-i18n-placeholder="shortPoint"></textarea></div>
-    <div class="field"><label for="improvement" data-i18n="improvement">What should be improved?</label><textarea id="improvement" name="improvement" required maxlength="240" placeholder="Write one short suggestion..." data-i18n-placeholder="shortSuggestion"></textarea></div>
-    <button class="btn btn-primary full-width" type="submit" data-i18n="submitFeedback">Submit Feedback</button>
-    <div id="feedbackStatus" class="feedback-status" role="status" aria-live="polite" hidden><strong data-i18n="thanks">Thank you. Your feedback is ready to share.</strong><p id="feedbackSummary"></p><div class="share-actions"><button class="btn btn-outline" id="copyFeedback" type="button" data-i18n="copyResponse">Copy Response</button><button class="btn btn-primary" id="shareFeedback" type="button" data-i18n="shareResponse">Share Response</button></div></div>
-  </form></div></section>
+  </section>
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div><img src="kku-logo.png" alt="" class="footer-logo"><div><strong data-i18n="university">King Khalid University</strong><span><span data-i18n="college">College of Computer Science</span><br><span data-i18n="department">Department of Computer Science</span></span></div></div><div class="footer-address"><strong data-i18n="location">Location</strong><span data-i18n="locationText">Saudi Arabia · Asir · Abha<br>P.O. Box 960 · Postal Code 61421</span></div></div><div class="container footer-bottom" data-i18n="footerLine">Department of Computer Science · College of Computer Science</div></footer>
+<footer class="site-footer"><div class="container footer-grid"><div><img src="kku-logo.png" alt="" class="footer-logo"><div><strong>King Khalid University</strong><span>College of Computer Science<br>Department of Computer Science</span></div></div><div class="footer-address"><strong>Location</strong><span>Saudi Arabia · Asir · Abha<br>P.O. Box 960 · Postal Code 61421</span></div></div><div class="container footer-bottom"><span>Web Engineering coursework website</span><span>Section 1302</span></div></footer>
 <script src="script.js"></script>
 </body>
 </html>

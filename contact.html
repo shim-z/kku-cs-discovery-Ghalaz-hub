@@ -10,16 +10,43 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main" data-i18n="skip">Skip to main content</a>
-<header class="site-header"><div class="container header-row"><a class="brand" href="index.html"><img src="kku-logo.png" alt="King Khalid University logo"><span class="brand-copy"><strong data-i18n="university">King Khalid University</strong><span data-i18n="college">College of Computer Science</span><small data-i18n="department">Department of Computer Science</small></span></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span data-i18n="menu">Menu</span></button></div></header>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="King Khalid University - Department of Computer Science home"><img src="kku-logo.png" alt="King Khalid University logo"><span class="brand-copy"><strong>King Khalid University</strong><span>College of Computer Science</span><small>Department of Computer Science</small></span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>Menu</span></button>
+  </div>
+</header>
 <div class="menu-overlay" data-menu-overlay hidden></div>
-<nav class="menu-panel" id="site-menu" aria-label="Main navigation" aria-hidden="true"><div class="menu-panel-head"><span data-i18n="navigation">Navigation</span><button class="menu-close" type="button" aria-label="Close menu">×</button></div><ul class="menu-list"><li><a data-nav href="index.html"><span class="nav-no">01</span><span data-i18n="home">Home</span></a></li><li><a data-nav href="about.html"><span class="nav-no">02</span><span data-i18n="about">About Us</span></a></li><li><a data-nav href="contact.html"><span class="nav-no">03</span><span data-i18n="contact">Contact</span></a></li><li><a data-nav href="feedback.html"><span class="nav-no">04</span><span data-i18n="feedback">Feedback</span></a></li></ul><div class="menu-panel-foot"><span data-i18n="college">College of Computer Science</span><button class="language-toggle" type="button" data-language-toggle>العربية</button></div></nav>
+<nav class="menu-panel" id="site-menu" aria-label="Main navigation" aria-hidden="true"><div class="menu-panel-head"><span>Navigation</span><button class="menu-close" type="button" aria-label="Close menu">×</button></div><ul class="menu-list"><li><a data-nav href="index.html"><span>01</span>Home</a></li><li><a data-nav href="about.html"><span>02</span>About Us</a></li><li><a data-nav href="contact.html"><span>03</span>Contact</a></li><li><a data-nav href="feedback.html"><span>04</span>Feedback</a></li></ul><div class="menu-panel-foot">College of Computer Science</div></nav>
 <main id="main">
-  <section class="page-hero"><div class="container narrow"><p class="kicker" data-i18n="contactKicker">Contact</p><h1 data-i18n="contactTitle">Contact the Department</h1><p class="lead" data-i18n="contactLead">Official location and department contact information in one clear place.</p></div></section>
-  <section class="section white"><div class="container contact-grid"><article class="contact-card primary-contact"><p class="kicker" data-i18n="deptContact">Department contact</p><h2 data-i18n="department">Department of Computer Science</h2><div class="contact-detail"><span data-i18n="email">Email</span><a href="mailto:alasmary@kku.edu.sa">alasmary@kku.edu.sa</a></div><div class="contact-detail"><span data-i18n="universityLabel">University</span><strong data-i18n="university">King Khalid University</strong></div><a class="btn btn-primary" href="mailto:alasmary@kku.edu.sa?subject=Department%20of%20Computer%20Science%20Inquiry" data-i18n="sendEmail">Send an Email</a></article><article class="contact-card"><p class="kicker" data-i18n="postal">Postal address</p><h2 data-i18n="college">College of Computer Science</h2><address><span data-i18n="university">King Khalid University</span><br><span data-i18n="locationText">Saudi Arabia · Asir · Abha<br>P.O. Box 960 · Postal Code 61421</span></address></article></div></section>
-  <section class="section soft"><div class="container contact-note"><div><p class="kicker" data-i18n="contactNoteKicker">Contact channel</p><h2 data-i18n="contactNoteTitle">Department inquiries</h2></div><p data-i18n="contactNoteText">The published department email can be used for academic and administrative inquiries related to the Department of Computer Science.</p></div></section>
+  <section class="page-hero">
+    <div class="container narrow"><p class="kicker">Contact</p><h1>Contact the Department</h1><p class="lead">Official location and department contact information in one clear place.</p></div>
+  </section>
+  <section class="section white">
+    <div class="container contact-grid">
+      <article class="contact-card primary-contact">
+        <p class="kicker">Department contact</p>
+        <h2>Computer Science</h2>
+        <div class="contact-detail"><span>Email</span><a href="mailto:alasmary@kku.edu.sa">alasmary@kku.edu.sa</a></div>
+        <div class="contact-detail"><span>University</span><strong>King Khalid University</strong></div>
+        <a class="btn btn-primary" href="mailto:alasmary@kku.edu.sa?subject=Department%20of%20Computer%20Science%20Inquiry">Send an Email</a>
+      </article>
+      <article class="contact-card">
+        <p class="kicker">Postal address</p>
+        <h2>College of Computer Science</h2>
+        <address>King Khalid University<br>Saudi Arabia<br>Asir · Abha<br>P.O. Box 960<br>Postal Code 61421</address>
+      </article>
+    </div>
+  </section>
+  <section class="section soft">
+    <div class="container contact-note">
+      <div><p class="kicker">Before contacting</p><h2>Use the appropriate channel</h2></div>
+      <p>For academic and department inquiries, use the department email above. Do not include passwords, payment details or other sensitive personal information in an email message.</p>
+    </div>
+  </section>
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div><img src="kku-logo.png" alt="" class="footer-logo"><div><strong data-i18n="university">King Khalid University</strong><span><span data-i18n="college">College of Computer Science</span><br><span data-i18n="department">Department of Computer Science</span></span></div></div><div class="footer-address"><strong data-i18n="location">Location</strong><span data-i18n="locationText">Saudi Arabia · Asir · Abha<br>P.O. Box 960 · Postal Code 61421</span></div></div><div class="container footer-bottom" data-i18n="footerLine">Department of Computer Science · College of Computer Science</div></footer>
+<footer class="site-footer"><div class="container footer-grid"><div><img src="kku-logo.png" alt="" class="footer-logo"><div><strong>King Khalid University</strong><span>College of Computer Science<br>Department of Computer Science</span></div></div><div class="footer-address"><strong>Location</strong><span>Saudi Arabia · Asir · Abha<br>P.O. Box 960 · Postal Code 61421</span></div></div><div class="container footer-bottom"><span>Web Engineering coursework website</span><span>Section 1302</span></div></footer>
 <script src="script.js"></script>
 </body>
 </html>
